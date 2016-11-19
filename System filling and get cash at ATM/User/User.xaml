@@ -5,20 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:System_filling_and_get_cash_at_ATM.User"
         mc:Ignorable="d"
-        Title="User" Height="300" Width="574.227">
+        Title="User" Height="404.124" Width="716.495">
     <Grid>
-        <StackPanel Name="Panel2">
-            <Border Padding="15" BorderBrush="Yellow" BorderThickness="2">
-                <TabControl >
+        <StackPanel Name="Panel2" RenderTransformOrigin="0.846,0.514">
+            <Border Padding="15" BorderBrush="Gray" BorderThickness="2">
+                <TabControl Height="339" Margin="8,0,-7,0" RenderTransformOrigin="0.526,0.518"  >
                     <TabItem Header="Перевірити баланс">
-                        <Button Padding="100,50,100,50">Tabs</Button>
+                        <TextBlock x:Name="textBlocBalance" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" TextBlock.TextAlignment="Center" FontSize="30" VerticalAlignment="Top" RenderTransformOrigin="1.454,5.078" Margin="99,149,0,0" Height="53" Width="451"/>
                     </TabItem>
                     <TabItem Header="Зняти готівку">
+                        <Grid>
+                            <Button x:Name="buttonWithdrawCash" Content="Зняти готівку" HorizontalAlignment="Left" Margin="269,180,0,0" VerticalAlignment="Top" Width="75" Click="buttonWithdrawCash_Click"/>
+                            <TextBox x:Name="textBoxWithdrawCash" HorizontalAlignment="Left" Height="23" Margin="249,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+                        </Grid>
                     </TabItem>
-                    <TabItem Header="Поповнити рахунок">
+                    <TabItem Header="Поповнити рахунок" >
+                        <Grid>
+                            <Button x:Name="buttonAddFunds" Content="Поповнити" Height="25" Width="75" Margin="324,178,250,0" VerticalAlignment="Top" Click="buttonAddFunds_Click" RenderTransformOrigin="0.91,-0.516"/>
+                            <TextBox x:Name="textBoxAddFunds" Height="23" TextWrapping="Wrap" Text="" Width="120" Margin="279,122,242,166"/>
+                        </Grid>
                     </TabItem>
                     <TabItem Header="Перевести кошти">
-                        
                     </TabItem>
                 </TabControl>
             </Border>

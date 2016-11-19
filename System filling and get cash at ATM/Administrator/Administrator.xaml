@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:System_filling_and_get_cash_at_ATM.Administrator"
         mc:Ignorable="d"
-        Title="Administrator" Height="300" Width="557.732">
+        Title="Administrator" Height="285.567" Width="557.732">
     <Grid>
         <StackPanel Name="Panel2">
             <Border Padding="15" BorderBrush="Gray" BorderThickness="2" Height="249">
