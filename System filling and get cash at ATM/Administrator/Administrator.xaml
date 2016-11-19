@@ -1,0 +1,24 @@
+﻿<Window x:Class="System_filling_and_get_cash_at_ATM.Administrator.Administrator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:System_filling_and_get_cash_at_ATM.Administrator"
+        mc:Ignorable="d"
+        Title="Administrator" Height="300" Width="557.732">
+    <Grid>
+        <StackPanel Name="Panel2">
+            <Border Padding="15" BorderBrush="Gray" BorderThickness="2" Height="249">
+                <TabControl >
+                    <TabItem Header="Забл/Розбл користувача">
+                    </TabItem>
+                    <TabItem Header="Встановити ліміт розрахунків" HorizontalAlignment="Left" Width="177">
+                    </TabItem>
+                    <TabItem Header="Надати виписку по рахунку">
+                        
+                    </TabItem>
+                </TabControl>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>
