@@ -27,6 +27,14 @@
                         </Grid>
                     </TabItem>
                     <TabItem Header="Перевести кошти">
+                        <Grid>
+                            <Button x:Name="buttonTtransferFunds" Content="Перевести кошти" HorizontalAlignment="Left" Margin="284,159,0,0" VerticalAlignment="Top" Width="113" Click="buttonTtransferFunds_Click"/>
+                            <TextBox x:Name="textBoxQuantityTtransferFunds" HorizontalAlignment="Left" Height="23" Margin="277,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                            <TextBox x:Name="textBoxLoginTtransferFunds"  HorizontalAlignment="Left" Height="23" Margin="277,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                            <Label x:Name="labelQuantityTtransferFunds" Content="Кількість" Width="100" Margin="139,64,428,221"/>
+                            <Label x:Name="labelLoginTtransferFunds" Content="Логін" Width="100" Margin="139,104,428,181"/>
+
+                        </Grid>
                     </TabItem>
                 </TabControl>
             </Border>

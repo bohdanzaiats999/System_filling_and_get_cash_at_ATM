@@ -37,5 +37,12 @@ namespace System_filling_and_get_cash_at_ATM.User
             textBlocBalance.Text = crud.CheckTheBalance().ToString();
 
         }
+
+        private void buttonTtransferFunds_Click(object sender, RoutedEventArgs e)
+        {
+            crud.TtransferFunds(textBoxQuantityTtransferFunds.Text, textBoxLoginTtransferFunds.Text);
+            textBlocBalance.Text = crud.CheckTheBalance().ToString();
+
+        }
     }
 }

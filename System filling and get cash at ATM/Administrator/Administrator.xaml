@@ -5,17 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:System_filling_and_get_cash_at_ATM.Administrator"
         mc:Ignorable="d"
-        Title="Administrator" Height="285.567" Width="557.732">
+        Title="Administrator" Height="454.405" Width="700.025">
     <Grid>
         <StackPanel Name="Panel2">
-            <Border Padding="15" BorderBrush="Gray" BorderThickness="2" Height="249">
-                <TabControl >
+            <Border Padding="15" BorderBrush="Gray" BorderThickness="2" Height="420">
+                <TabControl Margin="0,0,0,-7" >
                     <TabItem Header="Забл/Розбл користувача">
+                        <Grid>
+                            <DataGrid x:Name="dataGrid" Margin="216,21,189,119" AutoGenerateColumns="True"/>
+                            <Button x:Name="buttonRefresh" Content="Обновити" HorizontalAlignment="Left" Margin="367,251,0,0" VerticalAlignment="Top" Width="75" Click="buttonRefresh_Click"/>
+                            <Button x:Name="buttonBlockUnblockUser" Content="Змінити статус" HorizontalAlignment="Left" Margin="88,197,0,0" VerticalAlignment="Top" Width="90" Click="buttonBlockUnblockUser_Click"/>
+                            <TextBox x:Name="textBoxBlockUnblockUser" HorizontalAlignment="Left" Height="23" Margin="71,169,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+                            <Label x:Name="labelSetALimitCalculations" Content="Встановити ліміт розрахунків" HorizontalAlignment="Left" Margin="21,9,0,0" VerticalAlignment="Top"/>
+                            <Label x:Name="BlockUnblockUser" Content="Встановити статус користувачу" HorizontalAlignment="Left" Margin="32,138,0,0" VerticalAlignment="Top"/>
+                            <TextBox x:Name="textBoxIdSetALimitCalculations" HorizontalAlignment="Left" Height="23" Margin="48,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                            <Button x:Name="buttonSetALimitCalculations" Content="Встановити" HorizontalAlignment="Left" Margin="71,113,0,0" VerticalAlignment="Top" Width="75" Click="buttonSetALimitCalculations_Click"/>
+                            <TextBox x:Name="textBoxLimitSetALimitCalculations" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="48,68,0,0"/>
+                            <Label x:Name="labelIdSetALimitCalculations" Content="ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,37,0,0"/>
+                            <Label x:Name="labelLimitSetALimitCalculations" Content="Ліміт" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,68,0,0"/>
+                            <Label x:Name="labelBlockUnblockUser" Content="ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,169,0,0"/>
+                            <TextBlock x:Name="textBlockUsersDataGrid" HorizontalAlignment="Left" Margin="405,0,0,0" TextWrapping="Wrap" Text="Зареєстровані користувачі" VerticalAlignment="Top"/>
+
+                        </Grid>
                     </TabItem>
-                    <TabItem Header="Встановити ліміт розрахунків" HorizontalAlignment="Left" Width="177">
-                    </TabItem>
-                    <TabItem Header="Надати виписку по рахунку">
-                        
+                    <TabItem Header="Надати виписку по рахунку" Margin="-2,-2,-2,0">
+                        <Grid>
+                            
+                        <RichTextBox x:Name="richTextBoxProvideBilling" Margin="0,40,-2,0">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run Text=""/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                            <Button x:Name="buttonProvideBilling" Content="Надати виписку" HorizontalAlignment="Left" Margin="443,12,0,0" VerticalAlignment="Top" Width="99" Click="buttonProvideBilling_Click"/>
+                            <TextBox x:Name="textBoxProvideBilling" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="292,12,0,0"/>
+                            <TextBlock x:Name="textBlockProvideBilling" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Вкажіть ID за яким ви хочете получиит виписку:" VerticalAlignment="Top" Margin="10,12,0,0"/>
+                        </Grid>
                     </TabItem>
                 </TabControl>
             </Border>
