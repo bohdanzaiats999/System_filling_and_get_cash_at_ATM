@@ -35,3 +35,4 @@ E:\Gitab Project\System_filling_and_get_cash_at_ATM\System filling and get cash 
 E:\Gitab Project\System_filling_and_get_cash_at_ATM\System filling and get cash at ATM\obj\Debug\Registration.g.cs
 E:\Gitab Project\System_filling_and_get_cash_at_ATM\System filling and get cash at ATM\obj\Debug\System filling and get cash at ATM_Content.g.cs
 E:\Gitab Project\System_filling_and_get_cash_at_ATM\System filling and get cash at ATM\obj\Debug\Registration.baml
+E:\Gitab Project\System_filling_and_get_cash_at_ATM\System filling and get cash at ATM\obj\Debug\App.baml

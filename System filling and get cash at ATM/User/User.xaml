@@ -4,35 +4,101 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:System_filling_and_get_cash_at_ATM.User"
-        mc:Ignorable="d"
-        Title="User" Height="404.124" Width="716.495">
+        mc:Ignorable="d" MaxHeight="404.124" MaxWidth="541.495" MinHeight="404.124"  MinWidth="541.495" WindowStartupLocation="CenterScreen" >
     <Grid>
         <StackPanel Name="Panel2" RenderTransformOrigin="0.846,0.514">
-            <Border Padding="15" BorderBrush="Gray" BorderThickness="2">
-                <TabControl Height="339" Margin="8,0,-7,0" RenderTransformOrigin="0.526,0.518"  >
-                    <TabItem Header="Перевірити баланс">
-                        <TextBlock x:Name="textBlocBalance" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" TextBlock.TextAlignment="Center" FontSize="30" VerticalAlignment="Top" RenderTransformOrigin="1.454,5.078" Margin="99,149,0,0" Height="53" Width="451"/>
+            <Border Padding="15" BorderBrush="Gray" BorderThickness="2" Background="#FF898989" Height="386">
+                <TabControl  Margin="-17,-17,-17,-7" RenderTransformOrigin="0.526,0.518" Background="#FF898989"  >
+                    <TabItem  Header="Перевірити баланс" Height="30">
+                        <Grid>
+                            <TextBlock x:Name="textBlocBalance" Panel.ZIndex="1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" TextBlock.TextAlignment="Center" FontSize="30" VerticalAlignment="Top" RenderTransformOrigin="1.454,5.078" Margin="33,92,0,0" Height="53" Width="451" Foreground="White"/>
+                            <Image x:Name="image1" HorizontalAlignment="Left" Height="338" VerticalAlignment="Top" Width="599"  Margin="0,0,-72,0" Source="/System filling and get cash at ATM;component/Resource/bankomat.jpg" RenderTransformOrigin="0.406,0.476"/>
+                            <Button x:Name="buttonExit" FontSize="20"  HorizontalAlignment="Left" Margin="39,293,0,0" VerticalAlignment="Top" Width="163" Height="32" FontFamily="Microsoft YaHei UI" Click="buttonExit_Click">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/System filling and get cash at ATM;component/Resource/111.jpg"/>
+                                </Button.Background>
+                            </Button>
+
+                        </Grid>
                     </TabItem>
                     <TabItem Header="Зняти готівку">
-                        <Grid>
-                            <Button x:Name="buttonWithdrawCash" Content="Зняти готівку" HorizontalAlignment="Left" Margin="269,180,0,0" VerticalAlignment="Top" Width="75" Click="buttonWithdrawCash_Click"/>
-                            <TextBox x:Name="textBoxWithdrawCash" HorizontalAlignment="Left" Height="23" Margin="249,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                        <Grid >
+                            <Button x:Name="buttonWithdrawCash" Panel.ZIndex="1" Content="Зняти готівку" HorizontalAlignment="Left" Margin="301,263,0,0" VerticalAlignment="Top" Width="108" Click="buttonWithdrawCash_Click" RenderTransformOrigin="0.5,0.5" BorderBrush="White" Background="White" Height="21">
+
+                                <Button.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="2.748"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Button.RenderTransform>
+                            </Button>
+                            <TextBox x:Name="textBoxWithdrawCash" Panel.ZIndex="1" HorizontalAlignment="Left" Height="42" Margin="213,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Background="White" RenderTransformOrigin="0.5,0.5" SelectionOpacity="0.1" FontSize="24">
+                                <TextBox.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="1.727"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBox.RenderTransform>
+                            </TextBox>
+                            <Image x:Name="image" HorizontalAlignment="Left" Height="338" VerticalAlignment="Top" Width="601" Source="/System filling and get cash at ATM;component/Resource/getMoney.jpg"/>
+                            <Button x:Name="buttonClear" Panel.ZIndex="1" Content="Очистити"  HorizontalAlignment="Left" Margin="302,230,0,0" VerticalAlignment="Top" Width="111" RenderTransformOrigin="0.5,0.5" Height="24" Background="White" BorderBrush="White" Click="buttonClear_Click">
+                                <Button.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="2.414"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Button.RenderTransform>
+                            </Button>
 
                         </Grid>
                     </TabItem>
                     <TabItem Header="Поповнити рахунок" >
                         <Grid>
-                            <Button x:Name="buttonAddFunds" Content="Поповнити" Height="25" Width="75" Margin="324,178,250,0" VerticalAlignment="Top" Click="buttonAddFunds_Click" RenderTransformOrigin="0.91,-0.516"/>
-                            <TextBox x:Name="textBoxAddFunds" Height="23" TextWrapping="Wrap" Text="" Width="120" Margin="279,122,242,166"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Button x:Name="buttonAddFunds" Panel.ZIndex="1" Content="Поповнити" Height="41" Margin="246,291,152,0" VerticalAlignment="Top" Click="buttonAddFunds_Click" RenderTransformOrigin="0.518,0.493">
+                                <Button.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="-5.531"/>
+                                        <TranslateTransform X="3.395" Y="3.757"/>
+                                    </TransformGroup>
+                                </Button.RenderTransform>
+                            </Button>
+                            <TextBox x:Name="textBoxAddFunds" Panel.ZIndex="1" TextWrapping="Wrap" Text="" Margin="21,128,180,177" FontSize="20"  Background="#FFF6F1AF" RenderTransformOrigin="0.5,0.5" BorderBrush="#FFF6F1AF">
+                                <TextBox.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="-1.608"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBox.RenderTransform>
+                            </TextBox>
+                            <Image x:Name="image2" HorizontalAlignment="Left" Height="338" VerticalAlignment="Top" Width="527" Source="/System filling and get cash at ATM;component/Resource/1375949990_1.jpg" Stretch="Fill"/>
+
                         </Grid>
                     </TabItem>
                     <TabItem Header="Перевести кошти">
                         <Grid>
-                            <Button x:Name="buttonTtransferFunds" Content="Перевести кошти" HorizontalAlignment="Left" Margin="284,159,0,0" VerticalAlignment="Top" Width="113" Click="buttonTtransferFunds_Click"/>
-                            <TextBox x:Name="textBoxQuantityTtransferFunds" HorizontalAlignment="Left" Height="23" Margin="277,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                            <TextBox x:Name="textBoxLoginTtransferFunds"  HorizontalAlignment="Left" Height="23" Margin="277,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                            <Label x:Name="labelQuantityTtransferFunds" Content="Кількість" Width="100" Margin="139,64,428,221"/>
-                            <Label x:Name="labelLoginTtransferFunds" Content="Логін" Width="100" Margin="139,104,428,181"/>
+                            <Button x:Name="buttonTtransferFunds" Panel.ZIndex="1"  HorizontalAlignment="Left" Margin="327,295,0,0" VerticalAlignment="Top" Width="162" Click="buttonTtransferFunds_Click" Height="32">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/System filling and get cash at ATM;component/Resource/1.jpg"/>
+                                </Button.Background>
+                            </Button>
+                            <TextBox x:Name="textBoxQuantityTtransferFunds" FontSize="25" Panel.ZIndex="1" HorizontalAlignment="Left" Height="39" Margin="122,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Background="White" BorderBrush="White"/>
+                            <TextBox x:Name="textBoxLoginTtransferFunds" Panel.ZIndex="1" FontSize="25" HorizontalAlignment="Left" Height="36" Margin="122,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Background="White" BorderBrush="White"/>
+                            <Label x:Name="labelQuantityTtransferFunds" Panel.ZIndex="1" Content="Cума:" Margin="38,120,392,179" Foreground="White" FontSize="24"/>
+                            <Label x:Name="labelLoginTtransferFunds" Panel.ZIndex="1" Content="Логін" Margin="38,222,405,80" RenderTransformOrigin="1.054,-1.231" Foreground="White" FontSize="24"/>
+                            <Image x:Name="image3" HorizontalAlignment="Left" Height="338" VerticalAlignment="Top" Width="527"  Stretch="Fill" Source="/System filling and get cash at ATM;component/Resource/max.jpg"/>
 
                         </Grid>
                     </TabItem>

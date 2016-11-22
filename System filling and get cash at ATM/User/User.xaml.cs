@@ -23,26 +23,38 @@ namespace System_filling_and_get_cash_at_ATM.User
         public User()
         {
             InitializeComponent();
-            textBlocBalance.Text = crud.CheckTheBalance().ToString();
+            textBlocBalance.Text = "Доступна сума : "+ crud.CheckTheBalance().ToString() + " грн";
         }
 
         private void buttonAddFunds_Click(object sender, RoutedEventArgs e)
         {
             crud.AddFunds(textBoxAddFunds.Text);
-            textBlocBalance.Text = crud.CheckTheBalance().ToString();
+            textBlocBalance.Text = "Доступна сума :" + crud.CheckTheBalance().ToString();
         }
         private void buttonWithdrawCash_Click(object sender, RoutedEventArgs e)
         {
             crud.WithdrawCash(textBoxWithdrawCash.Text);
-            textBlocBalance.Text = crud.CheckTheBalance().ToString();
+            textBlocBalance.Text = "Доступна сума :" + crud.CheckTheBalance().ToString();
 
         }
 
         private void buttonTtransferFunds_Click(object sender, RoutedEventArgs e)
         {
             crud.TtransferFunds(textBoxQuantityTtransferFunds.Text, textBoxLoginTtransferFunds.Text);
-            textBlocBalance.Text = crud.CheckTheBalance().ToString();
+            textBlocBalance.Text = "Доступна сума :" + crud.CheckTheBalance().ToString();
 
+        }
+
+        private void buttonExit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+        }
+
+        private void buttonClear_Click(object sender, RoutedEventArgs e)
+        {
+            textBoxWithdrawCash.Text = "";
         }
     }
 }

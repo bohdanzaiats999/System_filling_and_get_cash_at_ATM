@@ -140,6 +140,17 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <Resource Include="Resource\registration.jpg" />
+    <Resource Include="Resource\max1.jpg" />
+    <Resource Include="Resource\111.jpg" />
+    <Resource Include="Resource\bankomat.jpg" />
+    <Resource Include="Resource\max.jpg" />
+    <Resource Include="Resource\1.jpg" />
+    <Resource Include="Resource\1375949990_1.jpg" />
+    <Resource Include="Resource\getMoney.jpg" />
+    <Resource Include="Resource\pol_vs.jpg" />
+    <Resource Include="Resource\block.png" />
+    <Resource Include="Resource\yak-perepraviti-groshi.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

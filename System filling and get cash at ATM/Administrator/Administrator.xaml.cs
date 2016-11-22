@@ -48,5 +48,12 @@ namespace System_filling_and_get_cash_at_ATM.Administrator
         {
             crud.richTextBoxProvideBillingRefresh(ref richTextBoxProvideBilling, textBoxProvideBilling.Text);
         }
+
+        private void buttonExit_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Close();
+            mainWindow.Show();
+        }
     }
 }

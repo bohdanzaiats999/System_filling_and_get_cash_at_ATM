@@ -5,13 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:System_filling_and_get_cash_at_ATM"
         mc:Ignorable="d"
-        Title="Логін" Height="163.574" Width="580.326">
-    <Grid>
-        <Button x:Name="buttonLogin" Content="Логін" HorizontalAlignment="Left" Margin="395,79,0,0" VerticalAlignment="Top" Width="75" Click="buttonLogin_Click"/>
-        <Button x:Name="buttonRegistration" Content="Реєстрація" HorizontalAlignment="Left" Margin="487,79,0,0" VerticalAlignment="Top" Width="75" Click="buttonRegistration_Click"/>
-        <TextBox x:Name="textBoxLogin" HorizontalAlignment="Left" Height="23" Margin="236,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
-        <TextBox x:Name="textBoxPassword" HorizontalAlignment="Left" Height="23" Margin="236,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
-        <Label x:Name="labelLogin" Content="Логін" HorizontalAlignment="Left" Margin="170,29,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="labelPassword" Content="Пароль" HorizontalAlignment="Left" Margin="170,73,0,0" VerticalAlignment="Top"/>
+        Title="Логін" MinHeight="341.875" MaxHeight="341.875" MinWidth="582.35" MaxWidth="582.35" WindowStartupLocation="CenterScreen">
+    <Grid Margin="1,-26,2,7">
+        <Button x:Name="buttonLogin" Width="162" Height="32" Panel.ZIndex="1"  HorizontalAlignment="Left"   Margin="369,291,0,0" VerticalAlignment="Top"  Click="buttonLogin_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Resource/1.jpg"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="buttonRegistration" Panel.ZIndex="1" Width="162" Height="32"  HorizontalAlignment="Left" Margin="40,291,0,0" VerticalAlignment="Top"  Click="buttonRegistration_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Resource/registration.jpg"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="textBoxLogin" Panel.ZIndex="1" FontSize="24" HorizontalAlignment="Left"  Margin="131,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" Height="38"/>
+        <PasswordBox x:Name="textBoxPassword" FontSize="24" Panel.ZIndex="1" HorizontalAlignment="Left"  Margin="131,228,0,0" Height="37" Width="370" VerticalAlignment="Top" />
+        <Label x:Name="labelLogin" Content="Логін:" FontSize="24" Panel.ZIndex="1" HorizontalAlignment="Left" Margin="41,135,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="labelPassword" Panel.ZIndex="1"  FontSize="23" Content="Пароль:" HorizontalAlignment="Left" Margin="32,220,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.569,0.462" Foreground="White"/>
+        <Image x:Name="image"  HorizontalAlignment="Left" Width="574" Source="Resource/max1.jpg" Margin="-2,26,-1,-6"  Stretch="Fill" Height="310" VerticalAlignment="Top" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.019"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Window>

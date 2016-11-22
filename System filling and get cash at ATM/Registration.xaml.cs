@@ -27,13 +27,14 @@ namespace System_filling_and_get_cash_at_ATM
         private void buttonRegistration_Click(object sender, RoutedEventArgs e)
         {
             CRUD crud = new CRUD();
-            crud.Registration(textBoxlogin.Text,textBoxPassword.Text);
+            crud.Registration(textBoxlogin.Text,textBoxPassword.Password);
         }
 
         private void buttonExid_Click(object sender, RoutedEventArgs e)
         {
             MainWindow main = new MainWindow();
             main.Show();
+            this.Close();
         }
     }
 }

@@ -5,14 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:System_filling_and_get_cash_at_ATM"
         mc:Ignorable="d"
-        Title="Registration" Height="205.155" Width="450.515">
+        Title="Реєстрація" WindowStartupLocation="CenterScreen" MaxHeight="334.875" MaxWidth="582.35" MinHeight="334.875" MinWidth="582.35">
     <Grid>
-        <Button x:Name="buttonRegistration" Content="Зареєструватись" HorizontalAlignment="Left" Margin="234,100,0,0" VerticalAlignment="Top" Width="106" Click="buttonRegistration_Click"/>
-        <Button x:Name="buttonExid" Content="Вийти" HorizontalAlignment="Left" Margin="358,100,0,0" VerticalAlignment="Top" Width="75" Click="buttonExid_Click"/>
-        <TextBox x:Name="textBoxlogin" HorizontalAlignment="Left" Height="23" Margin="96,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxPassword" HorizontalAlignment="Left" Height="23" Margin="96,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="labelLogin" Content="Логін" HorizontalAlignment="Left" Margin="34,53,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="labelPassword" Content="Пароль" HorizontalAlignment="Left" Margin="34,94,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonRegistration"  Panel.ZIndex="1"  HorizontalAlignment="Left" Margin="370,261,0,0" VerticalAlignment="Top" Width="162" Height="32" Click="buttonRegistration_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Resource/1.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="buttonExid"  Panel.ZIndex="1" HorizontalAlignment="Left" Margin="43,261,0,0" VerticalAlignment="Top" Width="162" Height="32" Click="buttonExid_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="Resource/111.jpg"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="textBoxlogin" Panel.ZIndex="1" HorizontalAlignment="Left"  Margin="131,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" Height="37" FontSize="24" BorderBrush="White"/>
+        <PasswordBox x:Name="textBoxPassword"  Panel.ZIndex="1" HorizontalAlignment="Left" FontSize="24"  Margin="131,198,0,0" VerticalAlignment="Top" Height="36" Width="370" BorderBrush="White"/>
+            <Label x:Name="labelLogin" Content="Логін:" FontSize="24" Panel.ZIndex="1" HorizontalAlignment="Left" Margin="41,113,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="labelPassword"  Panel.ZIndex="1" FontSize="23" Content="Пароль:" HorizontalAlignment="Left" Margin="35,190,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="304" VerticalAlignment="Top" Width="574" Source="Resource/max1.jpg" RenderTransformOrigin="0.503,0.428" Stretch="Fill"/>
 
     </Grid>
 </Window>
